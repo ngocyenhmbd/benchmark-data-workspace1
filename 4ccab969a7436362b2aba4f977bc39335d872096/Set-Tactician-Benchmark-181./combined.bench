@@ -1,24 +1,45 @@
 coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.Conjunction.proj1	181
 coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.Conjunction.proj2	181
-coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.Equivalence.iff_refl	181	0.021164	1	2	0	synth with cache (only 1: refine (fun v0 : Prop => conj (fun v1 : v0 => v1) (fun v1 : v0 => v1))).
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.Equivalence.iff_refl	181	0.016855	1	2	0	synth with cache (only 1: refine (fun v0 : Prop => conj (fun v1 : v0 => v1) (fun v1 : v0 => v1))).
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.Equivalence.iff_trans	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.Equivalence.iff_sym	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.and_iff_compat_l	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.and_iff_compat_r	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.or_iff_compat_l	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.or_iff_compat_r	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.imp_iff_compat_l	181
 coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.imp_iff_compat_r	181
-coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.not_iff_compat	181	0.026286	1	2	0	synth with cache (only 1: refine (fun (v0 v1 : Prop) (v2 : v0 <-> v1) => imp_iff_compat_r (@False) v2)).
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.not_iff_compat	181	0.021162	1	2	0	synth with cache (only 1: refine (fun (v0 v1 : Prop) (v2 : v0 <-> v1) => imp_iff_compat_r (@False) v2)).
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.neg_false	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.and_cancel_l	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.and_cancel_r	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.and_comm	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.and_assoc	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.or_cancel_l	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.or_cancel_r	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.or_comm	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.or_assoc	181
 coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.iff_and	181
-coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.universal_quantification.inst	181	0.105939	1	2	0	synth with cache (only 1: refine ((fun (v0 : @A) (v1 : forall v2 : @A, P v2) => v1 v0) : forall (v0 : @A) (v1 : all (fun v2 : @A => P v2)), P v0)).
-coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.universal_quantification.gen	181	0.103989	1	2	0	synth with cache (only 1: refine ((fun (v0 : Prop) (v1 : forall (v2 : @A) (v3 : v0), P v2) (v2 : v0) (v3 : @A) => v1 v3 v2) : forall (v0 : Prop) (v1 : forall (v2 : @A) (v3 : v0), P v2) (v2 : v0), all (@P))).
-coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.Logic_lemmas.absurd	181	0.119615	1	2	0	synth with cache (only 1: refine ((fun (v0 v1 : Prop) (v2 : v0) (v3 : forall v4 : v0, @False) => let v4 : @False := v3 v2 in match v4 as v5 in False return v1 with end) : forall (v0 v1 : Prop) (v2 : v0) (v3 : ~ v0), v1)).
-coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.eq_refl_map_distr	181	0.475298	1	2	0	synth with cache (only 1: refine (fun (v0 v1 : Type) (v2 : v0) (v3 : forall v4 : v0, v1) => eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.iff_to_and	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.universal_quantification.inst	181	0.086668	1	2	0	synth with cache (only 1: refine ((fun (v0 : @A) (v1 : forall v2 : @A, P v2) => v1 v0) : forall (v0 : @A) (v1 : all (fun v2 : @A => P v2)), P v0)).
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.universal_quantification.gen	181	0.092205	1	2	0	synth with cache (only 1: refine ((fun (v0 : Prop) (v1 : forall (v2 : @A) (v3 : v0), P v2) (v2 : v0) (v3 : @A) => v1 v3 v2) : forall (v0 : Prop) (v1 : forall (v2 : @A) (v3 : v0), P v2) (v2 : v0), all (@P))).
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.Logic_lemmas.absurd	181	0.101757	1	2	0	synth with cache (only 1: refine ((fun (v0 v1 : Prop) (v2 : v0) (v3 : forall v4 : v0, @False) => let v4 : @False := v3 v2 in match v4 as v5 in False return v1 with end) : forall (v0 v1 : Prop) (v2 : v0) (v3 : ~ v0), v1)).
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.Logic_lemmas.equality.not_eq_sym	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.f_equal2	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.f_equal3	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.f_equal4	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.f_equal5	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.eq_refl_map_distr	181	0.287201	1	2	0	synth with cache (only 1: refine (fun (v0 v1 : Type) (v2 : v0) (v3 : forall v4 : v0, v1) => eq_refl)).
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.eq_trans_rew_distr	181
 coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.rew_const	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.unique_existence	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.forall_exists_unique_domain_coincide	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.forall_exists_coincide_unique_domain	181
 coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.exists_inhabited	181
 coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.inhabited_covariant	181
-coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero'	181	2.087737	1	2	0	synth with cache (only 1: refine ((fun v0 : @U => Empty_set_zero (Singleton (@U) v0)) : forall v0 : @U, Add (@U) (Empty_set (@U)) v0 = Singleton (@U) v0)).
-coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.less_than_empty	181	2.137218	1	2	0	synth with cache (only 1: refine (fun (v0 : Ensemble (@U)) (v1 : Included (@U) v0 (Empty_set (@U))) => Extensionality_Ensembles (@U) v0 (Empty_set (@U)) (conj v1 (Empty_set_minimal (@U) v0) : Same_set (@U) v0 (Empty_set (@U))))).
-coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_add	181	2.400193	1	2	0	synth with cache (only 1: refine ((fun (v0 v1 : Ensemble (@U)) (v2 : @U) => Union_associative v0 v1 (Singleton (@U) v2)) : forall (v0 v1 : Ensemble (@U)) (v2 : @U), Add (@U) (Union (@U) v0 v1) v2 = Union (@U) v0 (Add (@U) v1 v2))).
-coq-tactician-stdlib.8.11.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.setcover_intro	181	2.281386	2	3
-coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZGcd.NZGcdProp.divide_0_r	181	2.867947	1	2	0	synth with cache (only 1: refine (fun v0 : @t => ex_intro (fun v1 : @t => 0 == v1 * v0) 0 ((fun v1 : 0 * v0 == 0 => trans_sym_co_inv_impl_morphism (Equivalence_PER (@eq_equiv)) (0 * v0) 0 v1) (mul_0_l v0) (reflexivity 0)))).
-coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZGcd.NZGcdProp.divide_factor_l	181	82.929824	1	2	0	synth with cache (only 1: refine (fun v0 v1 : @t => divide_mul_l v0 v0 v1 (divide_refl v0))).
-coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZGcd.NZGcdProp.divide_factor_r	181	111.662669	1	2	0	synth with cache (only 1: refine (fun v0 v1 : @t => divide_mul_r v0 v1 v0 (divide_refl v0))).
-coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZGcd.NZGcdProp.gcd_0_l_nonneg	181	208.216024	0	0
-coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZGcd.NZGcdProp.gcd_1_l	181
-coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZGcd.NZGcdProp.gcd_diag_nonneg	181
-coq-tactician-stdlib.8.11.dev	Coq.Numbers.NatInt.NZGcd.NZGcdProp.gcd_eq_0_r	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.eq_stepl	181	0.380689	1	2	0	synth with cache (only 1: refine (fun (v0 : Type) (v1 v2 v3 : v0) (v4 : v1 = v2) (v5 : v1 = v3) => eq_ind v1 (fun v6 : v0 => v6 = v2) v4 v3 v5)).
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.iff_stepl	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.ex.eq_ex_uncurried	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.ex.rew_ex	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.ex2.eq_ex2_uncurried	181
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.ex2.rew_ex2	181
